@@ -1,0 +1,3 @@
+[submodule "ResDAVEnet-VQ"]
+	path = ResDAVEnet-VQ
+	url = https://github.com/iapalm/ResDAVEnet-VQ.git
