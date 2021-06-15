@@ -1,0 +1,12 @@
+numba
+librosa
+matplotlib
+numpy
+pandas
+Pillow
+scikit-learn
+scipy
+seaborn
+torch
+torchvision
+tqdm
