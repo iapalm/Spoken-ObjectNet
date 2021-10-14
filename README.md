@@ -28,9 +28,9 @@ We support 3 experiments that can be used as baselines for future work:
 
 
 ### Fine-tune the model from Places-400k
-- Download and extract the directory containing the `args.pkl` file which specifies the fine-tuning arguments. The directory at this [link (TBD)](TODO) contains the `args.pkl` file as well as the model weights. 
+- Download and extract the directory containing the `args.pkl` file which specifies the fine-tuning arguments. The directory at this [link](https://data.csail.mit.edu/placesaudio/Spoken-ObjectNet/models/RDVQ_00000_finetune.tar.gz) contains the `args.pkl` file as well as the model weights. 
 - The model weights of the fine-tuned model are provided for easier evaluation. Run the following command to evaluate the model using those weights: `source scripts/train.sh 00000 RDVQ_00000_finetune "--resume True --mode eval"`
-- Otherwise, to fine-tune the model yourself, run the following command: `source scripts/train.sh 00000 RDVQ_00000_finetune "--resume True"`. This still require the `args.pkl` file mentioned previously.
+- Otherwise, to fine-tune the model yourself, first move the model weights to a new folder `model_dl`, then make a new folder `model` to save the new weights, and then run the following command: `source scripts/train.sh 00000 RDVQ_00000_finetune "--resume True"`. This still require the `args.pkl` file mentioned previously.
 - Plese note the value of `data_dt` in `scripts/train.sh`. The code saves the best performing model during training, which is why it should be set to the validation set during training. During evaluation, it loads the best performing model, which is why it should be set to the test set during evaluation.
 
 ### Train the model from scratch on Spoken ObjectNet
