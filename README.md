@@ -1,4 +1,4 @@
-Official code for our Interspeech 2021 - [Spoken ObjectNet: A Bias-Controlled Spoken Caption Dataset](https://www.isca-speech.org/archive/pdfs/interspeech_2021/palmer21_interspeech.pdf) [1]*.
+Official code for our Interspeech 2021 - [Spoken ObjectNet: A Bias-Controlled Spoken Caption Dataset](https://arxiv.org/pdf/2110.07575.pdf) [1]*.
 
 Visually-grounded spoken language datasets can enable models to learn cross-modal correspondences with very weak supervision. However, modern audio-visual datasets contain biases that undermine the real-world performance of models trained on that data. We introduce Spoken ObjectNet, which is designed to remove some of these biases and provide a way to better evaluate how effectively models will perform in real-world scenarios. This dataset expands upon ObjectNet, which is a bias-controlled image dataset that features similar image classes to those present in ImageNet.
 
